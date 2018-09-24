@@ -4,6 +4,10 @@ html,body,ul {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+a {
+    color: black;
+    text-decoration: none;
+}
 li {
     list-style-type: none;
 }
@@ -21,31 +25,26 @@ li {
 .menu {
     grid-column: 1/4;
     background-color: #373277;
-    padding: 5px 10px;
+    padding: 5px 20px;
 }
 nav {
     display: flex;
-    align-items: center;
-    box-sizing: border-box;
-    width: 100%;
+    flex-wrap: wrap;
+}
+.nav-logo {
+    
 }
 
-.logo {
-    order: 0;
-    width: 50%;
-}
-.logo>img {
-    width: 30px;
-    height: auto;
-}
 .nav-menu {
-    order: 1;
-    width: 50%;
+    margin-left: auto;
+    display: flex;
 }
-.nav-menu > li {
+
+.nav-menu>li{
     flex: 1;
-    display: inline-flex;
+    padding: 5px 16px;
 }
+
 .sidebar {
     grid-row: 2/5;
     background-color: rgb(148, 188, 47);
