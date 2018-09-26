@@ -48,12 +48,29 @@ nav {
 .sidebar {
     grid-row: 2/5;
     background-color: rgb(148, 188, 47);
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    padding: 0 20px;
+}
+.sidebar > div {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    right: 10%;
+    bottom: 25%;
+}
+.responsive-img {
+    max-width: 100%;
+    height: auto;
 }
 
 .konten1, .konten2, .konten3 {
     grid-column: 2/4;
     color: white;
     background-color: #584b4f;
+    box-sizing: border-box;
+    padding: 5px 20px;
 }
 
 .footer {
