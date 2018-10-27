@@ -1,0 +1,34 @@
+{
+    "places" :[
+        {
+            "lokasi": [-6.98081, 110.4098], 
+            "sponsor" : "Warung Sutar", 
+            "gambar": "img/sutar.png",
+            "review": "Warung Murah tempat favorit anak UDINUS untuk makan, enak, murah, dan cukup berkualitas, tersedia Nasi Rames, Soto, sama Pecel"
+        },
+        {
+            "lokasi": [-6.9777657,110.4100925], 
+            "sponsor" : "Angkringan Mbah RI",
+            "gambar" : "img/mbah_ri.png",
+            "review": "Angkringan yang cocok untuk nongkrong di malam hari, tersedia berbagai macam minuman, dan dijamin harga murah"
+        },
+        {
+            "lokasi": [-6.9706909,110.4122412], 
+            "sponsor" : "Nasi Goreng 7000", 
+            "gambar":"https://picsum.photos/200/",
+            "review": "Nasi Goreng murah meriah, yang penting kenyang, kalau tanya rasa mendinglah hehe"
+        },
+        {
+            "lokasi": [-6.222977, 106.789152], 
+            "sponsor" : "STEAK cow", 
+            "gambar":"https://picsum.photos/200/300",
+            "review": "Steak lokal harga impor, 200gr dan 300gr mentah"
+        },
+        {
+            "lokasi": [-6.222043, 106.791070], 
+            "sponsor" : "Rupa-rupa  Seafood!!", 
+            "gambar":"https://picsum.photos/200/300",
+            "review": "seafood international lobster, king crabs, cumi, kerang, semua ada"
+        }
+    ]
+}

@@ -9,6 +9,11 @@ var urlsToCache = [
     '/project1/add2numbers.js',
     '/project2/index.html',
     '/project2/css/mystyle.css',
+    '/project3/index.html',
+    '/project3/css/peta.css',
+    '/project3/img/mbah_ri.png',
+    '/project3/img/sutar.png',
+    '/project3/js/peta.js',
 ];
 
 self.addEventListener('install', function(event) {

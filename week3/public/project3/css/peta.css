@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+html, body, #mapid {
+    height: 100%;
+    width: 100vw;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: grid;
+    height: 100%;
+    grid-gap: 4px;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: 60% 40%;
+}
+.peta {
+    grid-column: 1/-1;
+}
+.gambar {
+    padding: 20px;
+    background: lightblue;
+    grid-column: 1/6;
+    margin-left: 10px;
+}
+.review {
+    padding: 20px;
+    background: yellow;
+    grid-column: 6/-1;
+}
+/* .wrapper {
+    height: 100%;
+} */
+.gambar > img {
+    height: 100%;
+}
+@media screen and (max-width: 750px) {
+    .gambar {
+        padding: 10px;
+        grid-column: 1/5;
+    }
+    .review {
+        padding: 10px;
+        grid-column: 5/-1;
+    }
+    .gambar > img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+}
