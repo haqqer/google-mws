@@ -1,19 +1,25 @@
 {
     "name": "MyPotofolioApp",
     "short_name": "My Portofolio Apps",
-    "lang": "en-US",
-    "icons": [{
-      "src":"images/console.png",
-      "size":"128x128",
-      "type":"image/png"
-    }],
+    "icons": [
+      {
+        "src": "/images/console.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      },
+      {
+        "src": "/images/console.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+      "src":"/images/console.png",
+      "type":"image/png",
+      "size":"128x128"
+      }
+    ],
     "start_url": "/index.html",
     "background_color": "#3E4EB8",
     "theme_color": "#2F3BA2",
-    "display": "fullscreen",
-    "related_applications": [
-      {
-        "id": "com.haqqer.portofolio"
-      }
-    ]
+    "display": "standalone"
   }

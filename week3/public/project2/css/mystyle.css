@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 html, body, #mapid {
     height: 100%;
     width: 100vw;
@@ -22,5 +25,5 @@ body {
 }
 .review {
     background: yellow;
-    grid-column: 1/-6;
+    grid-column: 6/-1;
 }
