@@ -19,16 +19,6 @@ let par= document.createElement('p');
 gmb.appendChild(img);
 rev.appendChild(par);
 
-
-const URL = "data/peta.json";
-fetch(URL)
-    .then(response => response.ok ? response.json() : "ERROR" )
-    .then( resp => {
-        let places = resp.places;
-        localStorage.setItem('places',  JSON.stringify(resp.places));
-    })
-    .catch(err => console.log(err))
-    
 function showLocation(e) {
     console.log(`Lat : ${e.latlng.lat}, Lng : ${e.latlng.lng}`)
     let ix= findLocation(e.latlng.lat, e.latlng.lng);
@@ -43,9 +33,17 @@ function showLocation(e) {
     }
 }
 
-let places = JSON.parse(localStorage.getItem('places'));
+const URL = "data/peta.json";
+let places = [];
+fetch(URL)
+    .then(response => response.ok ? response.json() : "ERROR" )
+    .then( resp => {
+        let places = resp.places;
+        localStorage.setItem('places',  JSON.stringify(resp.places));
+    })
+    .catch(err => console.log(err));
 
-
+places = JSON.parse(localStorage.getItem('places'));
 
 for (var p of places) {
     var marker = L.marker(p.lokasi).bindPopup(p.sponsor).addTo(mymap);
